@@ -5,13 +5,15 @@
 
 依赖方法：
 1.
-	allprojects {
+allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
+
 2.当前1.0.0
+
 	dependencies {
 	        implementation 'com.github.lijiangyong0628:PagingListView:1.0.0'
 	}
