@@ -1,6 +1,21 @@
 # PagingListView
 一款好用的分页ListView,可以结合后台请求分页数据使用
 
+[![](https://jitpack.io/v/lijiangyong0628/PagingListView.svg)](https://jitpack.io/#lijiangyong0628/PagingListView)
+
+依赖方法：
+1.
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+2.当前1.0.0
+	dependencies {
+	        implementation 'com.github.lijiangyong0628:PagingListView:1.0.0'
+	}
+
 以下为demo使用方法，可以参考，有注释
 
 public class MainActivity extends AppCompatActivity {
