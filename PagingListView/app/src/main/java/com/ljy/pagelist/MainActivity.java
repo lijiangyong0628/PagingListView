@@ -1,12 +1,26 @@
-# PagingListView
-一款好用的分页ListView,可以结合后台请求分页数据使用
+package com.ljy.pagelist;
 
-以下为demo使用方法，可以参考，有注释
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.ljy.page.list.HttpStatus;
+import com.ljy.page.list.InforAdapter;
+import com.ljy.page.list.PagingListView;
+import com.ljy.page.list.PagingListViewPresent;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private PagingListView demoListView;
-    private InforAdapter inforAdapter;//必须实现，具体界面可以自定义
+    private InforAdapter inforAdapter;
     private PagingListViewPresent<String> present;
     private LinearLayout inforLinearLayout;
 

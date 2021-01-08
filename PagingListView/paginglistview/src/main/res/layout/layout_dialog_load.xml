@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_round_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:paddingTop="20dp"
+           android:paddingBottom="20dp"
+           android:paddingStart="60dp"
+           android:paddingEnd="60dp"
+           android:gravity="center"
+           android:id="@+id/infoLayout"
+           android:orientation="horizontal"
+           android:layout_centerHorizontal="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ProgressBar
+               android:id="@+id/progressBar"
+               style="?android:attr/progressBarStyleInverse"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:layout_marginStart="5dp"
+               android:id="@+id/msgTv"
+               android:text="正在加载中..."
+               android:textSize="14dp"
+               android:gravity="center"
+               android:textColor="#a1333435"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:layout_alignRight="@+id/infoLayout"
+            android:textColor="#b3b3b3"
+            android:padding="8dp"
+            android:src="@mipmap/dialog_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+</LinearLayout>
