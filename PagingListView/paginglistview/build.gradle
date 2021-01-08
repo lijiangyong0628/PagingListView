@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
-//添加发布到jitpack脚本
-apply from :"../publishAndroidLib.gradle"
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.lijiangyong0628'
 
 android {
     compileSdkVersion 29
