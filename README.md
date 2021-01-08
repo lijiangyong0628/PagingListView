@@ -4,21 +4,16 @@
 [![](https://jitpack.io/v/lijiangyong0628/PagingListView.svg)](https://jitpack.io/#lijiangyong0628/PagingListView)
 
 依赖方法：
-1.
+Step 1. Add it in your root build.gradle at the end of repositories:
 
-allprojects {
-
+	allprojects {
 		repositories {
-
 			...
-
 			maven { url 'https://jitpack.io' }
-
 		}
-
 	}
 
-2.当前版本1.0.0
+Step 2. Add the dependency    当前版本1.0.0
 
 	dependencies {
 	        implementation 'com.github.lijiangyong0628:PagingListView:1.0.0'
